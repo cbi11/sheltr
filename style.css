@@ -426,17 +426,20 @@ h2{
 #img1{
     background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('881.jpg');
     background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
 }
 #img2{
     background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('18710.jpg');
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
 }
 #img3{
     background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('21156.jpg');
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
 }
 .s-body{
     width: 90%;
@@ -496,6 +499,7 @@ footer{
 .footer-wrapper{
     width: 92%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
