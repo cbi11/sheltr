@@ -150,7 +150,7 @@ body{
     flex-direction: column;
     height: 100vh;
     justify-content: center;
-    background-color: white;
+    background-color: #2e2e43;
     font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     box-shadow: 0px 2px 3px 0 rgba(0,0,0,.5);
 }
@@ -158,7 +158,9 @@ body{
     list-style: none;
 }
 .overlay-links{
-    height: 500px;
+    height: 50%;
+    width: 92%;
+    margin-left: 4%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -166,7 +168,7 @@ body{
 .overlay-links li a{
     padding: 10px;
     width: 400px;
-    color: #696975;
+    color: #747b8c;
     font-size: 14px;
     text-decoration: none;
     letter-spacing: 3px;
@@ -179,7 +181,7 @@ body{
     height: 50px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 .close-button{
     width: 10%;
@@ -188,7 +190,7 @@ body{
     transform: rotate(225deg);
     font-size: 40px;
     cursor: pointer;
-    color: #2e2e43;
+    color: white;
     margin-top: 8%;
 }
 .gap{
@@ -426,8 +428,8 @@ h2{
 #img1{
     background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('881.jpg');
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
+    background-repeat: no-repeat;
 }
 #img2{
     background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('18710.jpg');
@@ -499,7 +501,6 @@ footer{
 .footer-wrapper{
     width: 92%;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
@@ -511,8 +512,8 @@ footer{
     text-decoration: none;
 }
 .footer-icons{
-    width: 15%;
-    height: 75%;
+    width: 25%;
+    height: 100%;
     display: flex;
     justify-content: space-between;
 }
@@ -525,6 +526,10 @@ footer{
     background-color: #3b5998;
     color: white;
 }
+.facebook a{
+    color: white;
+    font-size: 12px;
+}
 .twitter{
     display: flex;
     justify-content: center;
@@ -532,6 +537,10 @@ footer{
     background-color: #00acee;
     width: 15%;
     height: 100%;
+}
+.twitter a{
+    color: white;
+    font-size: 12px;
 }
 .instagram{
     display: flex;
@@ -541,6 +550,10 @@ footer{
     height: 100%;
     background-color: #c4302b;
 }
+.instagram a{
+    color: white;
+    font-size: 12px;
+}
 .linkedin{
     display: flex;
     justify-content: center;
@@ -549,7 +562,14 @@ footer{
     width: 15%;
     height: 100%;
 }
+.linkedin a{
+    color: white;
+    font-size: 12px;
+}
 @media screen and (max-width: 1024px){
+    body{
+        background-color: rgb(253, 253, 253);
+    }
     .welcome-secton{
         width: 92%;
         margin-left: 4%;
@@ -560,7 +580,7 @@ footer{
         width: 92%;
         height: 100px;
         margin-top: -1%;
-        box-shadow: 0px 2px 3px 0 rgba(0,0,0,.1);
+        box-shadow: 0px 2px 3px 0 rgba(0,0,0,.3);
     }
     .nav-links{
         width: 37%;
@@ -580,9 +600,10 @@ footer{
         flex-direction: column-reverse;
         justify-content: space-evenly;
         height: 85%;
-        box-shadow: 0px 2px 9px 0 rgba(0,0,0,.1);
+        box-shadow: 0px 2px 9px 0 rgba(0,0,0,.3);
         margin-right: 4%;
         width: 100%;
+        background-color: white;
         /* margin-top: 15%; */
     }
     .welcome-image{
@@ -601,8 +622,8 @@ footer{
     .features-section{
         justify-content: space-around;
         height: 855px;
-        box-shadow: 0px 2px 9px 0 rgba(0,0,0,.1);
-
+        box-shadow: 0px 2px 9px 0 rgba(0,0,0,.3);
+        background-color: white;
     }
     .icon-boxes{
         height: 60%;
@@ -615,7 +636,8 @@ footer{
     }
     .services-section{
         height: 1450px;
-        box-shadow: 0px 2px 9px 0 rgba(0,0,0,.1);
+        box-shadow: 0px 2px 9px 0 rgba(0,0,0,.3);
+        background-color: white;
     }
     .services{
         flex-direction: column;
@@ -649,7 +671,8 @@ footer{
         height: 700px;
         flex-direction: column-reverse;
         justify-content: space-evenly;
-        box-shadow: 0px 2px 9px 0 rgba(0,0,0,.1);
+        box-shadow: 0px 2px 9px 0 rgba(0,0,0,.3);
+        background-color: white;
     }
     .concept-image{
         width: 100%;
@@ -680,9 +703,6 @@ footer{
     }
     .s3{
         width: 65%;
-    }
-    .footer-icons{
-        width: 20%;
     }
 }
 @media screen and (max-width :789px){
@@ -760,9 +780,13 @@ footer{
         height: 36%;
         width: 95%;
     }
-}   .c-img{
+   .c-img{
         width: 550px;
         height: 250px;
+   }
+   .footer-icons{
+       width: 30%;
+   }
 }
 @media screen and (max-width: 662px){
     .w-img{
@@ -789,6 +813,23 @@ footer{
     .concept-write-up{
         height: 45%;
         width: 85%;
+    }
+    footer{
+        height: 80px;
+        justify-content: center;
+    }
+    .footer-wrapper{
+        flex-direction: column;
+        justify-content: space-between;
+        height: 80%;
+    }
+    .footer-icons{
+        width: 50%;
+        height: 40%;
+    }
+    .footer-text{
+        line-height: normal;
+        text-align: center;
     }
 }
 @media screen and (max-width: 600px){
@@ -940,12 +981,22 @@ footer{
         width: 340px;
     }
 }
-@media screen and (max-width: 408px){
+@media screen and (max-width: 410px){
     .text-header{
         font-size: 28px;
     }
     .welcome-text{
         height: 50%;
+    }
+    footer{
+        height: 100px;
+    }
+    .footer-wrapper{
+        justify-content: space-between;
+    }
+    .footer-icons{
+        height: 25px;
+        width: 200px;
     }
 }
 @media screen and (max-width: 374px){
